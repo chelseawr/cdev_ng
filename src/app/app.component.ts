@@ -29,5 +29,7 @@ import { BoxComponent } from '../box/box.component';
 })
 // break out card at minimum
 export class AppComponent {
+  shiningRed = `rgb(152, 31, 36)`;
+  shiningOrange = `rgb(223, 95, 24)`;
   title = 'cdev_ng';
 }
