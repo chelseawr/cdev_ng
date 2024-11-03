@@ -12,7 +12,13 @@ $shining-orange: rgb(223, 95, 24);
   margin-top: 0;
 }
 
-div {
+#gradient {
+  height: 100vh;
+  background: rgba(136, 136, 136, 0);
+  background: linear-gradient(180deg, rgba(136, 136, 136, 0), rgba(0, 0, 0, 1));
+}
+
+#card {
   position: absolute;
   color: $shining-orange;
   background-color: black;

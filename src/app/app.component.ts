@@ -15,13 +15,12 @@ import { BoxComponent } from '../box/box.component';
     FontAwesomeModule,
     BoxComponent,
   ],
-  template: `
-    <div>
+  template: ` <div id="card">
       <h1 id="hello">Hello World, my name is</h1>
       <h2 id="name">Chelsea May.</h2>
       <box />
     </div>
-  `,
+    <div id="gradient"></div>`,
   styleUrl: './app.component.scss',
 })
 // break out card at minimum
