@@ -12,6 +12,7 @@ import { AdjScrollbar } from '../adjScollbar/adjScrollbar.component';
   standalone: true,
   imports: [MatButtonModule, FontAwesomeModule, AdjScrollbar],
   templateUrl: './box.component.html',
+  styleUrl: './box.component.scss',
 })
 export class BoxComponent {
   faLinkedin = faLinkedin;
