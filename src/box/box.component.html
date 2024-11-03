@@ -1,0 +1,24 @@
+<button mat-raised-button size="large" id="contactButton">
+  <a href="mailto:chelsearmay51+dev@gmail.com">Get in touch</a>
+  <fa-icon [icon]="faChevronDoubleRight" size="2x" />
+</button>
+<adj-scollbar />
+<div className="outsideLinks">
+  <button matTooltip="LinkedIn">
+    <a href="https://www.linkedin.com/in/chelseawr/">
+      <fa-icon [icon]="faLinkedin" size="2x" />
+    </a>
+  </button>
+
+  <button matTooltip="Personal Github">
+    <a href="https://github.com/chelseawr">
+      <fa-icon [icon]="faGithub" size="2x" />
+    </a>
+  </button>
+
+  <button matTooltip="Download Resume">
+    <a href="{ResumePDF}" target="_blank" rel="noreferrer">
+      <fa-icon [icon]="faFilePdf" size="2x" />
+    </a>
+  </button>
+</div>

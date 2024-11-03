@@ -1,4 +1,15 @@
-.card {
+#hello {
+  margin-bottom: 0;
+  font-size: 3vw;
+}
+
+#name {
+  color: #b5fac7;
+  font-size: xxx-large;
+  margin-top: 0;
+}
+
+div {
   position: absolute;
   background-color: #383e34;
   border-radius: 1.5em;
@@ -13,16 +24,6 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.15),
     0 64px 64px rgba(0, 0, 0, 0.15);
-}
-#hello {
-  margin-bottom: 0;
-  font-size: 3vw;
-}
-
-#name {
-  color: #b5fac7;
-  font-size: xxx-large;
-  margin-top: 0;
 }
 
 // get in touch button
@@ -46,36 +47,6 @@
 
 .outsideLinks a:nth-child(2) {
   padding: 20px;
-}
-
-// Scroller styling
-.scroller {
-  height: 1.2em;
-  line-height: 1.2em;
-  position: relative;
-  overflow: hidden;
-  margin: 10px 0 10px 0;
-  width: 10em;
-}
-.scroller > span {
-  position: absolute;
-  top: 0;
-  animation: slide 5s infinite;
-  font-weight: bold;
-}
-@keyframes slide {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -1.2em;
-  }
-  50% {
-    top: -2.4em;
-  }
-  75% {
-    top: -3.6em;
-  }
 }
 
 .note::after {
