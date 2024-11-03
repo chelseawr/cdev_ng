@@ -1,22 +1,20 @@
 <adj-scollbar />
-<button mat-raised-button size="large" id="contactButton">
-  <a href="mailto:chelsearmay51+dev@gmail.com">GET IN TOUCH</a>
-  <fa-icon [icon]="faChevronDoubleRight" size="1x" />
-</button>
+<contact-button />
+
 <div className="outsideLinks">
-  <button matTooltip="LinkedIn">
+  <button matTooltip="LinkedIn" mat-fab>
     <a href="https://www.linkedin.com/in/chelseawr/">
       <fa-icon [icon]="faLinkedin" size="2x" />
     </a>
   </button>
 
-  <button matTooltip="Personal Github">
+  <button matTooltip="Personal Github" mat-fab>
     <a href="https://github.com/chelseawr">
       <fa-icon [icon]="faGithub" size="2x" />
     </a>
   </button>
 
-  <button matTooltip="Download Resume">
+  <button matTooltip="Download Resume" mat-fab>
     <a href="{ResumePDF}" target="_blank" rel="noreferrer">
       <fa-icon [icon]="faFilePdf" size="2x" />
     </a>
