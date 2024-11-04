@@ -20,11 +20,12 @@ $shining-orange: rgb(223, 95, 24);
 
 #card {
   position: absolute;
+  margin-left: 50px;
   color: $shining-orange;
   background-color: black;
   border-radius: 1.5em;
   min-width: 322px;
-  font-family: "Lekton", "Roboto", sans-serif;
+  // font-family: "Exo 2", "Lekton", "Roboto", sans-serif;
   max-width: 1170px;
   width: 35%;
   padding: 2.6em 3.8em;
