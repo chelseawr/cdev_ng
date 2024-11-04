@@ -17,6 +17,10 @@ $shining-orange: rgb(223, 95, 24);
   background: rgba(136, 136, 136, 0);
   background: linear-gradient(180deg, rgba(136, 136, 136, 0), rgba(0, 0, 0, 1));
 }
+h1,
+h2 {
+  font-family: "Lekton", sans-serif;
+}
 
 #card {
   position: absolute;
@@ -25,7 +29,6 @@ $shining-orange: rgb(223, 95, 24);
   background-color: black;
   border-radius: 1.5em;
   min-width: 322px;
-  // font-family: "Exo 2", "Lekton", "Roboto", sans-serif;
   max-width: 1170px;
   width: 35%;
   padding: 2.6em 3.8em;

@@ -12,6 +12,11 @@
   animation: slide 10s infinite;
   font-weight: bold;
 }
+
+h3 {
+  font-family: "Arsenal SC", "Lekton";
+}
+
 @keyframes slide {
   0% {
     top: 0;
