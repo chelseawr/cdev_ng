@@ -15,7 +15,7 @@
   </button>
 
   <button matTooltip="Download Resume" mat-fab>
-    <a href="{ResumePDF}" target="_blank" rel="noreferrer">
+    <a [href]="sourcePath" [download]="fileName">
       <fa-icon [icon]="faFilePdf" size="2x" />
     </a>
   </button>
