@@ -21,8 +21,9 @@ import { ContactButtonComponent } from '../contactButton/contactButton.component
   styleUrl: './box.component.scss',
 })
 export class BoxComponent {
-  sourcePath = 'https://terms.lowes-rebates.com/30211.pdf';
-  fileName = '30211.pdf';
+  sourcePath =
+    'https://github.com/chelseawr/cdev_ng/blob/master/src/assets/May2024-resume.pdf';
+  fileName = 'May2024-resume.pdf';
   faLinkedin = faLinkedin;
   faGithub = faGithub;
   faFilePdf = faFilePdf;
