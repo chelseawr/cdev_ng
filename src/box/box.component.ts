@@ -21,6 +21,7 @@ import { ContactButtonComponent } from '../contactButton/contactButton.component
   styleUrl: './box.component.scss',
 })
 export class BoxComponent {
+  // change source path to Amplify hosted file /assets
   sourcePath =
     'https://github.com/chelseawr/cdev_ng/blob/master/src/assets/May2024-resume.pdf';
   fileName = 'May2024-resume.pdf';
