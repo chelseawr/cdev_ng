@@ -12,7 +12,6 @@ frontend:
       commands:
         - node --version
         - npm  --version
-        - n latest
         - npm install -g n
         - node --version
         - npm  --version
