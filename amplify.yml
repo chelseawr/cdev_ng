@@ -12,7 +12,6 @@ frontend:
 
     build:
       commands:
-        - ng version
         - ng build --configuration=production
   artifacts:
     baseDirectory: dist/cdev_ng
