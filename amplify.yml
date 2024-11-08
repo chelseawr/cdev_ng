@@ -12,6 +12,10 @@ frontend:
       commands:
         - node --version
         - npm  --version
+        - n latest
+        - npm install -g n
+        - node --version
+        - npm  --version
         - npm install -g @angular/cli
         - ng build --configuration=production
   artifacts:
