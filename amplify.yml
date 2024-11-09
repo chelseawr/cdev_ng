@@ -11,9 +11,9 @@ frontend:
     build:
       commands:
         - npm install -g @angular/cli
-        - npm install -g n
-        - sudo n 18.19
-        - npm --version
+        - npx -v # Check npx version (should return a version if npx is available)
+        - npx -p node@18.19.0 -c "node -v" # Use npx to specify Node version temporarily
+        - node --version
         - ng build --configuration=production
   artifacts:
     baseDirectory: dist/cdev_ng
