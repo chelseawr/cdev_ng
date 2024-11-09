@@ -12,7 +12,7 @@ frontend:
       commands:
         - npm install -g @angular/cli
         - npx -v # Check npx version (should return a version if npx is available)
-        - npx -p node@18.19.0 -c "node -v" # Use npx to specify Node version temporarily
+        - npx -p node@latest -c "node -v" # Use npx to specify Node version temporarily
         - node --version
         - ng build --configuration=production
   artifacts:
