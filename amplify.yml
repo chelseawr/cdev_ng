@@ -12,7 +12,7 @@ frontend:
       commands:
         - npm install -g @angular/cli
         - npm install -g n
-        - n 18.19
+        - sudo n 18.19
         - npm --version
         - ng build --configuration=production
   artifacts:
