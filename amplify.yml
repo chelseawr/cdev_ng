@@ -13,10 +13,9 @@ frontend:
 
     build:
       commands:
-        - npm install -g @angular/cli
         - nvm install 18.19.0
         - nvm use 18.19.0
-        - node --version
+        - npm install -g @angular/cli
         - ng build --configuration=production
   artifacts:
     baseDirectory: dist/cdev_ng
