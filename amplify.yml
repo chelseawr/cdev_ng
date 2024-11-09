@@ -4,8 +4,6 @@ frontend:
     prebuild:
       - rm -rf node_modules
       - npm cache clean --force
-      - npm install -g n
-      - n 18.19
       - npm i --save @fortawesome/fontawesome-svg-core --legacy-peer-deps
       - npm install --legacy-peer-deps
       - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
@@ -13,6 +11,9 @@ frontend:
     build:
       commands:
         - npm install -g @angular/cli
+        - npm install -g n
+        - n 18.19
+        - npm --version
         - ng build --configuration=production
   artifacts:
     baseDirectory: dist/cdev_ng
