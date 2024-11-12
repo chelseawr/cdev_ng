@@ -1,25 +1,24 @@
 version: 1
-frontend:
+backend:
   phases:
-    preBuild:
+    build:
       commands:
         - rm -rf node_modules
-        - rm -rf ~/.npm
         - npm cache clean --force
-        - nvm install latest
-        - nvm use latest
-        - npm config list
-        - npm install
-        - npm install -g @angular/cli
+        - npm config set @fortawesome:registry=https://npm.fontawesome.com/
+        - npm config set registry=https://registry.npmjs.org/
+        - npm install --legacy-peer-deps
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
-
+frontend:
+  phases:
     build:
       commands:
         - ng build --configuration=production
-
   artifacts:
-    baseDirectory: dist/cdev_ng
+    baseDirectory: dist
     files:
       - "**/*"
   cache:
-    paths: []
+    paths:
+      - .npm/**/*
+      - node_modules/**/*
