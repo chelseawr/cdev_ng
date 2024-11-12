@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFilePdf } from '@fortawesome/pro-solid-svg-icons';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
