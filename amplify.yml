@@ -10,7 +10,6 @@ frontend:
         - nvm use 18.19.1
         - npm config list
         - npm install --legacy-peer-deps
-        - npm install --save @fortawesome/fontawesome-svg-core
         - npm install -g @angular/cli
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 
