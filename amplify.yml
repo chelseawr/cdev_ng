@@ -4,12 +4,12 @@ frontend:
     preBuild:
       commands:
         - rm -rf node_modules
-        - rm -rf ~/.npm # Clear global npm cache to avoid stale packages
+        - rm -rf ~/.npm
         - npm cache clean --force
-        - nvm install 18.19.1
-        - nvm use 18.19.1
+        - nvm install latest
+        - nvm use latest
         - npm config list
-        - npm install --legacy-peer-deps
+        - npm install
         - npm install -g @angular/cli
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 
