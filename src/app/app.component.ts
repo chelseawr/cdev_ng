@@ -2,20 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BoxComponent } from '../box/box.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    MatTooltipModule,
-    MatButtonModule,
-    FontAwesomeModule,
-    BoxComponent,
-  ],
+  imports: [RouterOutlet, MatTooltipModule, MatButtonModule, BoxComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
