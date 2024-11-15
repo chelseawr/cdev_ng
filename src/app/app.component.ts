@@ -4,7 +4,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 import { BoxComponent } from '../box/box.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import outputs from '../../amplify_outputs.json';
+import { Amplify } from 'aws-amplify';
 
+Amplify.configure(outputs);
 @Component({
   selector: 'app-root',
   standalone: true,
